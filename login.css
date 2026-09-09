@@ -54,6 +54,8 @@
   font-size: 20px;
   letter-spacing: 0;
   line-height: normal;
+
+  -webkit-text-stroke: 0.5px #000000;
 }
 
 .login .text-wrapper-2 {
