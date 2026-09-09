@@ -144,3 +144,17 @@
   aspect-ratio: 2.84;
   object-fit: cover;
 }
+
+.login .don-t-have-an {
+  position: absolute;
+  top: 797px;
+  left: 444px;
+  width: 552px;
+  font-family: "Freesentation-3Light", Helvetica;
+  font-weight: 300;
+  color: transparent;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
