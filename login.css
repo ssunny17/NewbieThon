@@ -1,7 +1,18 @@
+/* 전체 로그인 화면 */
+
 .login {
-  position: relative;
-  width: 1440px;
-  height: 1024px;
+  width: 100%;
+  height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  overflow: hidden;
+
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 42%,
@@ -9,87 +20,113 @@
   );
 }
 
-.login .rectangle {
-  top: 309px;
-  left: 395px;
-  width: 650px;
-  height: 600px;
-  background-color: #fbfff5;
-  border-radius: 25px;
-  position: absolute;
-  border: 1px solid;
-  border-color: #000000;
+
+/* 로고 */
+
+.login .LOG-IN {
+  width: min(406px, 70vw);
+  height: auto;
+
+  object-fit: contain;
+
+  margin-bottom: 50px;
+
+  transform: translateY(-30px);
 }
 
-.login .login-input {
-  position: absolute;
-  top: 30px;
-  left: 0;
 
-  width: 490px;
+/* 로그인 박스 */
+
+.login .login-box {
+  width: min(600px, calc(100% - 32px));
+
+  min-height: 470px;
+
+  background-color: #fbfff5;
+
+  border: 1px solid #000000;
+  border-radius: 25px;
+
+  padding: 55px 60px 45px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 35px;
+}
+
+
+/* 이메일 / 비밀번호 영역 */
+
+.login .group {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+/* E-MAIL / PASSWORD */
+
+.login .text-wrapper {
+  font-family: "Cafe24PROUP", sans-serif;
+  font-weight: 400;
+
+  color: #a5ff00;
+
+  font-size: 20px;
+
+  -webkit-text-stroke: 0.5px #000000;
+}
+
+
+/* 입력창 */
+
+.login .login-input {
+  width: 100%;
   height: 71px;
+
+  padding: 0 25px;
 
   background-color: #ffffff;
 
   border: 1px solid #000000;
   border-radius: 10px;
 
-  padding: 0 25px;
+  outline: none;
 
   font-family: "Freesentation-3Light", Helvetica;
   font-weight: 300;
-  font-size: 25px;
 
   color: #000000;
 
-  outline: none;
+  font-size: 25px;
 }
+
+
+/* placeholder 글씨 */
 
 .login .login-input::placeholder {
   color: #00000080;
 }
 
-.login .group {
-  top: 379px;
-  position: absolute;
-  left: 475px;
-  width: 494px;
-  height: 101px;
+
+/* 입력창 클릭했을 때 */
+
+.login .login-input:focus {
+  border: 1.5px solid #000000;
 }
 
-.login .text-wrapper {
-  position: absolute;
-  top: 0;
-  left: 8px;
-  width: 158px;
 
-  font-family: "Cafe24PROUP", sans-serif;
-  font-weight: 400;
-
-  color: #a5ff00;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-
-  -webkit-text-stroke: 0.5px #000000;
-}
-
-.login .group-2 {
-  top: 525px;
-  position: absolute;
-  left: 475px;
-  width: 494px;
-  height: 101px;
-}
+/* SIGN IN 버튼 */
 
 .login .sign-in-button {
-  position: absolute;
-
-  top: 701px;
-  left: 530px;
-
-  width: 380px;
+  width: min(380px, 100%);
   height: 71px;
+
+  margin: 25px auto 0;
 
   background-color: #a5ff00;
 
@@ -100,6 +137,7 @@
   font-weight: 400;
 
   color: #ffffff;
+
   font-size: 20px;
 
   -webkit-text-stroke: 0.5px #000000;
@@ -107,39 +145,148 @@
   cursor: pointer;
 }
 
-.login .LOG-IN {
-  position: absolute;
-  top: 100px;
-  left: calc(50.00% - 203px);
-  width: 406px;
-  height: 143px;
-  aspect-ratio: 2.84;
-  object-fit: cover;
+
+/* SIGN IN 마우스 올렸을 때 */
+
+.login .sign-in-button:hover {
+  filter: brightness(0.97);
 }
 
+
+/* SIGN IN 클릭했을 때 */
+
+.login .sign-in-button:active {
+  transform: translateY(2px);
+}
+
+
+/* Don't have an account */
+
 .login .don-t-have-an {
-  position: absolute;
-  top: 797px;
-  left: 444px;
-  width: 552px;
+  margin: 0;
 
   font-family: "Freesentation-3Light", Helvetica;
   font-weight: 300;
+
   font-size: 20px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
 
-.login .don-t-have-an .span {
   color: #000000;
+
+  text-align: center;
 }
 
-.login .don-t-have-an .text-wrapper-5 {
+
+/* Sign Up! */
+
+.login .text-wrapper-5 {
   color: #a5ff00;
+
   cursor: pointer;
 }
 
-.login .don-t-have-an .text-wrapper-5:hover {
+
+/* Sign Up 마우스 올렸을 때 */
+
+.login .text-wrapper-5:hover {
   text-decoration: underline;
+}
+
+
+/* 화면이 좁아졌을 때 */
+
+@media (max-width: 700px) {
+
+  .login {
+    padding: 20px 16px;
+  }
+
+  .login .LOG-IN {
+    width: min(320px, 70vw);
+
+    margin-bottom: 30px;
+  }
+
+  .login .login-box {
+    padding: 45px 30px 40px;
+
+    gap: 35px;
+  }
+
+  .login .login-input {
+    height: 60px;
+
+    font-size: 21px;
+  }
+
+  .login .sign-in-button {
+    height: 60px;
+  }
+
+}
+
+/* 화면 높이가 더 작은 경우 */
+@media (max-height: 850px) {
+
+  .login .LOG-IN {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .login .login-box {
+    padding: 35px 60px 30px;
+    gap: 25px;
+  }
+
+  .login .login-input {
+    height: 60px;
+    font-size: 22px;
+  }
+
+  .login .sign-in-button {
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  .login .don-t-have-an {
+    font-size: 18px;
+  }
+}
+
+/* 화면이 더 낮은 경우 */
+@media (max-height: 700px) {
+
+  .login .LOG-IN {
+    width: 240px;
+    margin-bottom: 10px;
+  }
+
+  .login .login-box {
+    padding: 25px 50px;
+    gap: 15px;
+  }
+
+  .login .login-input {
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .login .sign-in-button {
+    height: 50px;
+    margin-top: 5px;
+  }
+}
+
+/* Email → Password 사이 간격 늘리기 */
+.login .group + .group {
+  margin-top: 18px;
+}
+
+/* SIGN IN 버튼 조금 아래로 */
+.login .sign-in-button {
+  margin-top: 35px;
+}
+
+/* 하단 문장 조금 아래로 */
+.login .don-t-have-an {
+  margin-top: 15px;
 }

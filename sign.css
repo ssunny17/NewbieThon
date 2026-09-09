@@ -1,0 +1,288 @@
+/* 전체 SIGN UP 화면 */
+
+.sign-up {
+  width: 100%;
+  height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  overflow: hidden;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 42%,
+    rgba(226, 255, 173, 1) 100%
+  );
+}
+
+
+/* SIGN UP 로고 */
+
+.sign-up .SIGN-UP {
+  width: min(454px, 70vw);
+  height: auto;
+
+  object-fit: contain;
+
+  margin-bottom: 25px;
+
+  transform: translateY(-50px);
+}
+
+
+/* 회원가입 박스 */
+
+.sign-up .sign-box {
+  width: min(600px, calc(100% - 32px));
+  min-height: 560px;
+
+  background-color: #fbfff5;
+
+  border: 1px solid #000000;
+  border-radius: 25px;
+
+  padding: 40px 60px 45px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+}
+
+
+/* Create your account */
+
+.sign-up .create-your-account {
+  margin: 0 0 5px;
+
+  font-family: "Cafe24PROUP", sans-serif;
+  font-weight: 400;
+
+  font-size: 35px;
+  text-align: center;
+
+  -webkit-text-stroke: 0.5px #000000;
+}
+
+.sign-up .create {
+  color: #a5ff00;
+}
+
+.sign-up .your-account {
+  color: #ffffff;
+}
+
+
+/* 입력칸 */
+
+.sign-up .sign-input {
+  width: 100%;
+  height: 71px;
+
+  padding: 0 25px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #000000;
+  border-radius: 10px;
+
+  outline: none;
+
+  font-family: "Freesentation-3Light", Helvetica;
+  font-weight: 300;
+
+  color: #000000;
+
+  font-size: 25px;
+}
+
+
+/* placeholder */
+
+.sign-up .sign-input::placeholder {
+  color: #00000080;
+}
+
+
+/* 입력칸 선택 */
+
+.sign-up .sign-input:focus {
+  border: 1.5px solid #000000;
+}
+
+
+/* CREATE 버튼 */
+
+.sign-up .create-button {
+  width: min(380px, 100%);
+  height: 71px;
+
+  margin: 10px auto 0;
+
+  background-color: #a5ff00;
+
+  border: 1px solid #000000;
+  border-radius: 10px;
+
+  font-family: "Cafe24PROUP", sans-serif;
+  font-weight: 400;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  -webkit-text-stroke: 0.5px #000000;
+
+  cursor: pointer;
+}
+
+
+/* 버튼 hover */
+
+.sign-up .create-button:hover {
+  filter: brightness(0.97);
+}
+
+
+/* 버튼 클릭 */
+
+.sign-up .create-button:active {
+  transform: translateY(2px);
+}
+
+
+/* Already have an account */
+
+.sign-up .already-have-an {
+  margin: 0;
+
+  font-family: "Freesentation-3Light", Helvetica;
+  font-weight: 300;
+
+  color: #000000;
+
+  font-size: 20px;
+
+  text-align: center;
+}
+
+
+/* Sign In! */
+
+.sign-up .sign-in-link {
+  color: #a5ff00;
+
+  cursor: pointer;
+}
+
+.sign-up .sign-in-link:hover {
+  text-decoration: underline;
+}
+
+
+/* 화면 높이가 조금 작은 경우 */
+
+@media (max-height: 850px) {
+
+  .sign-up .SIGN-UP {
+    width: 330px;
+    margin-bottom: 15px;
+
+    transform: translateY(-30px);
+  }
+
+  .sign-up .sign-box {
+    min-height: 470px;
+
+    padding: 25px 60px 30px;
+
+    gap: 18px;
+  }
+
+  .sign-up .create-your-account {
+    font-size: 30px;
+  }
+
+  .sign-up .sign-input {
+    height: 60px;
+    font-size: 22px;
+  }
+
+  .sign-up .create-button {
+    height: 60px;
+  }
+
+  .sign-up .already-have-an {
+    font-size: 18px;
+  }
+}
+
+
+/* 더 작은 화면 */
+
+@media (max-height: 700px) {
+
+  .sign-up .SIGN-UP {
+    width: 260px;
+    margin-bottom: 8px;
+  }
+
+  .sign-up .sign-box {
+    min-height: 420px;
+
+    padding: 20px 50px;
+
+    gap: 14px;
+  }
+
+  .sign-up .create-your-account {
+    font-size: 26px;
+  }
+
+  .sign-up .sign-input {
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .sign-up .create-button {
+    height: 50px;
+  }
+}
+
+
+/* 화면 폭이 좁은 경우 */
+
+@media (max-width: 700px) {
+
+  .sign-up {
+    padding: 16px;
+  }
+
+  .sign-up .SIGN-UP {
+    width: min(320px, 70vw);
+  }
+
+  .sign-up .sign-box {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .sign-up .create-your-account {
+    font-size: 27px;
+  }
+}
+
+/* Email → Password 사이를 더 넓게 */
+.sign-up #password {
+  margin-top: 13px;
+}
+
+/* Password → Confirm Password 사이는 더 좁게 */
+.sign-up #confirmPassword {
+  margin-top: -5px;
+}

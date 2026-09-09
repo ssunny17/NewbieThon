@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="sign.css">
+</head>
+
+<body>
+
+<div class="sign-up">
+
+  <!-- 로고 -->
+  <img class="SIGN-UP" src="img/SIGN UP.png" />
+
+  <!-- 회원가입 박스 -->
+  <div class="sign-box">
+
+    <!-- 제목 -->
+    <p class="create-your-account">
+      <span class="create">Create</span>
+      <span class="your-account"> your account</span>
+    </p>
+
+    <!-- 이메일 -->
+    <input
+      type="email"
+      id="email"
+      class="sign-input"
+      placeholder="Email"
+    />
+
+    <!-- 비밀번호 -->
+    <input
+      type="password"
+      id="password"
+      class="sign-input"
+      placeholder="Password"
+    />
+
+    <!-- 비밀번호 확인 -->
+    <input
+      type="password"
+      id="confirmPassword"
+      class="sign-input"
+      placeholder="Confirm Password"
+    />
+
+    <!-- CREATE 버튼 -->
+    <button id="createBtn" class="create-button">
+      CREATE
+    </button>
+
+    <!-- 로그인 이동 -->
+    <p class="already-have-an">
+      <span>Already have an account? </span>
+      <span class="sign-in-link" id="signInBtn">
+        Sign In!
+      </span>
+    </p>
+
+  </div>
+
+</div>
+
+<script src="sign.js"></script>
+
+</body>
+</html>

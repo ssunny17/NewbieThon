@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<div class="login">
+
+  <!-- 로고 -->
+  <img class="LOG-IN" src="img/LOG IN.png" />
+
+  <!-- 로그인 박스 -->
+  <div class="login-box">
+
+    <!-- 이메일 -->
+    <div class="group">
+      <div class="text-wrapper">E-MAIL</div>
+
+      <input
+        type="email"
+        id="email"
+        class="login-input"
+        placeholder="Enter Your Email"
+      />
+    </div>
+
+    <!-- 비밀번호 -->
+    <div class="group">
+      <div class="text-wrapper">PASSWORD</div>
+
+      <input
+        type="password"
+        id="password"
+        class="login-input"
+        placeholder="Enter Your Password"
+      />
+    </div>
+
+    <!-- SIGN IN -->
+    <button id="signInBtn" class="sign-in-button">
+      SIGN IN
+    </button>
+
+    <!-- 회원가입 -->
+    <p class="don-t-have-an">
+      <span>Don’t have an account? </span>
+      <span class="text-wrapper-5" id="signUpBtn">
+        Sign Up!
+      </span>
+    </p>
+
+  </div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>

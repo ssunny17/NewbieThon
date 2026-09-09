@@ -40,7 +40,7 @@ signInBtn.addEventListener("click", function () {
 // Sign Up! 클릭
 signUpBtn.addEventListener("click", function () {
 
-  alert("아직 개발이 안되었습니다.");
+  window.location.href = "sign.html";
 
 });
 
