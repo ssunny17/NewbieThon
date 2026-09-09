@@ -21,24 +21,40 @@
   border-color: #000000;
 }
 
+.login .login-input {
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  width: 490px;
+  height: 71px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #000000;
+  border-radius: 10px;
+
+  padding: 0 25px;
+
+  font-family: "Freesentation-3Light", Helvetica;
+  font-weight: 300;
+  font-size: 25px;
+
+  color: #000000;
+
+  outline: none;
+}
+
+.login .login-input::placeholder {
+  color: #00000080;
+}
+
 .login .group {
   top: 379px;
   position: absolute;
   left: 475px;
   width: 494px;
   height: 101px;
-}
-
-.login .div {
-  top: 30px;
-  left: 0;
-  width: 490px;
-  height: 71px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  position: absolute;
-  border: 1px solid;
-  border-color: #000000;
 }
 
 .login .text-wrapper {
@@ -58,23 +74,6 @@
   -webkit-text-stroke: 0.5px #000000;
 }
 
-.login .text-wrapper-2 {
-  width: 195px;
-  position: absolute;
-  top: 55px;
-  left: 25px;
-  height: 22px;
-  display: flex;
-  align-items: center;
-  font-family: "Freesentation-3Light", Helvetica;
-  font-weight: 300;
-  color: #00000080;
-  font-size: 25px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
 .login .group-2 {
   top: 525px;
   position: absolute;
@@ -83,56 +82,29 @@
   height: 101px;
 }
 
-.login .text-wrapper-3 {
-  width: 266px;
+.login .sign-in-button {
   position: absolute;
-  top: 55px;
-  left: 25px;
-  height: 22px;
-  display: flex;
-  align-items: center;
-  font-family: "Freesentation-3Light", Helvetica;
-  font-weight: 300;
-  color: #00000080;
-  font-size: 25px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
 
-.login .rectangle-2 {
-  position: absolute;
   top: 701px;
   left: 530px;
+
   width: 380px;
   height: 71px;
+
   background-color: #a5ff00;
+
+  border: 1px solid #000000;
   border-radius: 10px;
-  border: 1px solid;
-  border-color: #000000;
-}
-
-.login .text-wrapper-4 {
-  position: absolute;
-  top: 724px;
-  left: calc(50% - 80px);
-  width: 158px;
-  height: 25px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   font-family: "Cafe24PROUP", sans-serif;
   font-weight: 400;
 
   color: #ffffff;
   font-size: 20px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
 
   -webkit-text-stroke: 0.5px #000000;
+
+  cursor: pointer;
 }
 
 .login .LOG-IN {
@@ -165,4 +137,9 @@
 
 .login .don-t-have-an .text-wrapper-5 {
   color: #a5ff00;
+  cursor: pointer;
+}
+
+.login .don-t-have-an .text-wrapper-5:hover {
+  text-decoration: underline;
 }
