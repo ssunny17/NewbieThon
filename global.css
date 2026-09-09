@@ -1,0 +1,30 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  min-height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+/* @FONTWARNING[{"type": "restricted", "family": "\uce74\ud39824 \ud504\ub85c\uc5c5-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "카페24 프로업-Regular";
+  src: local("카페24 프로업-Regular");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Freesentation-3Light", "weight": "300", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Freesentation-3Light";
+  src: local("Freesentation-3Light");
+}

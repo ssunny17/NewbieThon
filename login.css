@@ -1,0 +1,139 @@
+.login {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 42%,
+    rgba(226, 255, 173, 1) 100%
+  );
+}
+
+.login .rectangle {
+  top: 309px;
+  left: 395px;
+  width: 650px;
+  height: 600px;
+  background-color: #fbfff5;
+  border-radius: 25px;
+  position: absolute;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.login .group {
+  top: 379px;
+  position: absolute;
+  left: 475px;
+  width: 494px;
+  height: 101px;
+}
+
+.login .div {
+  top: 30px;
+  left: 0;
+  width: 490px;
+  height: 71px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.login .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 158px;
+  -webkit-text-stroke: 0.5px #000000;
+  font-family: "카페24 프로업-Regular", Helvetica;
+  font-weight: 400;
+  color: #a5ff00;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.login .text-wrapper-2 {
+  width: 195px;
+  position: absolute;
+  top: 55px;
+  left: 25px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  font-family: "Freesentation-3Light", Helvetica;
+  font-weight: 300;
+  color: #00000080;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.login .group-2 {
+  top: 525px;
+  position: absolute;
+  left: 475px;
+  width: 494px;
+  height: 101px;
+}
+
+.login .text-wrapper-3 {
+  width: 266px;
+  position: absolute;
+  top: 55px;
+  left: 25px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  font-family: "Freesentation-3Light", Helvetica;
+  font-weight: 300;
+  color: #00000080;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.login .rectangle-2 {
+  position: absolute;
+  top: 701px;
+  left: 530px;
+  width: 380px;
+  height: 71px;
+  background-color: #a5ff00;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.login .text-wrapper-4 {
+  position: absolute;
+  top: 724px;
+  left: calc(50.00% - 80px);
+  width: 158px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-text-stroke: 0.5px #000000;
+  font-family: "카페24 프로업-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.login .LOG-IN {
+  position: absolute;
+  top: 100px;
+  left: calc(50.00% - 203px);
+  width: 406px;
+  height: 143px;
+  aspect-ratio: 2.84;
+  object-fit: cover;
+}
