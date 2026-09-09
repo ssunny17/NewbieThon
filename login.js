@@ -40,7 +40,7 @@ signInBtn.addEventListener("click", function () {
 // Sign Up! 클릭
 signUpBtn.addEventListener("click", function () {
 
-  window.location.href = "signup.html";
+  window.location.href = "sign.html";
 
 });
 
