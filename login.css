@@ -150,11 +150,19 @@
   top: 797px;
   left: 444px;
   width: 552px;
+
   font-family: "Freesentation-3Light", Helvetica;
   font-weight: 300;
-  color: transparent;
   font-size: 20px;
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+}
+
+.login .don-t-have-an .span {
+  color: #000000;
+}
+
+.login .don-t-have-an .text-wrapper-5 {
+  color: #a5ff00;
 }
