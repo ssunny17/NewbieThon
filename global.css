@@ -19,8 +19,10 @@ a {
 /* @FONTWARNING[{"type": "restricted", "family": "\uce74\ud39824 \ud504\ub85c\uc5c5-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
 
 @font-face {
-  font-family: "카페24 프로업-Regular";
-  src: local("카페24 프로업-Regular");
+  font-family: "Cafe24PROUP";
+  src: url("./fonts/Cafe24PROUP.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 /* @FONTWARNING[{"type": "restricted", "family": "Freesentation-3Light", "weight": "300", "style": "normal", "allowsCrossOrigin": false}] */
 
